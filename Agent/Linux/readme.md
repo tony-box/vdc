@@ -51,6 +51,12 @@ bash -c "./build.sh"
 ```
 bash -c "./vsts-agent-create.sh <organization-url> <personal-access-token> <vsts-pool-name> <agent-vm-name>"
 ```
+organizational-url: Url to your AzureDevOps or TFS environment. 
+  Azure DevOps ex: https://dev.azure.com/{your-organization} 
+  TFS ex: https://{your_server}/tfs
+personal-access-token: PAT created in previous step
+vsts-pool-name: Name of the Agent pool you created
+agent-vm-name: Name of the 
 
 > VM will be created in the same resource group, subscription and tenant as the Image created by Packer. The name of this resource group can be found in the build.sh and vsts-agent-create.sh bash scripts.
 > VM will have following attributes:
